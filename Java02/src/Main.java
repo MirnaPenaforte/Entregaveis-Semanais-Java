@@ -35,10 +35,25 @@ public class Main {
 
         Carro carro = new Carro("BYD", 2026, true);
         Carro carro1 = new Carro("Toyota", 2020, true);
+        carro1.ano = 2024;
 
-        System.out.println("\nDados do carro:");
+        System.out.println("Dados do carro 1:");
         System.out.println("Marca: " + carro.marca);
         System.out.println("Ano: " + carro.ano);
         System.out.println("Está à venda: " + carro.venda);
+
+        System.out.println();
+
+        // Exibindo os dados do segundo carro
+        System.out.println("Dados do carro 2:");
+        System.out.println("Marca: " + carro1.marca);
+        System.out.println("Ano: " + carro1.ano);
+        System.out.println("Está à venda: " + carro1.venda);
+
+
+
+        /*
+         A alteração não afetou o outro carro porque carro e carro são objetos diferentes. Cada objeto possui sua própria cópia dos atributos marca, ano e venda.
+         */
     }
 }
